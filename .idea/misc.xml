@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dmitrii Danilov/Desktop/projekt/Drinks/app/src/main/res/drawable/bottom_nav_color_selector.xml" value="0.3165" />
+        <entry key="..\:/Users/Dmitrii Danilov/Desktop/projekt/Drinks/app/src/main/res/layout/activity_main.xml" value="0.6" />
+        <entry key="..\:/Users/Dmitrii Danilov/Desktop/projekt/Drinks/app/src/main/res/layout/fragment_alcoholic_drink.xml" value="0.2728921124206709" />
+        <entry key="..\:/Users/Dmitrii Danilov/Desktop/projekt/Drinks/app/src/main/res/layout/fragment_base.xml" value="0.261650277896537" />
+        <entry key="..\:/Users/Dmitrii Danilov/Desktop/projekt/Drinks/app/src/main/res/layout/fragment_not_alcoholic.xml" value="0.3128161888701518" />
+        <entry key="..\:/Users/Dmitrii Danilov/Desktop/projekt/Drinks/app/src/main/res/layout/item_drink.xml" value="0.27575887131252674" />
+        <entry key="..\:/Users/Dmitrii Danilov/Desktop/projekt/Drinks/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27575887131252674" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
