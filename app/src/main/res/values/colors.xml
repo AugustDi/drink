@@ -10,5 +10,6 @@
     <color name="light_green">#E0F4EC</color>
     <color name="blueberry">#8190A8</color>
     <color name="orange">#FF4317</color>
+    <color name="light_blue">#F3F6FA</color>
     <color name="white_transparent">#CCFFFFFF</color>
 </resources>

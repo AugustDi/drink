@@ -4,8 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.triare.drinks.data.mapper.DrinkDetailsMapper
 import com.triare.drinks.data.mapper.DrinksMapper
 import com.triare.drinks.data.repository.DrinkRepository
+import com.triare.drinks.ui.dvo.DrinkDetailsDvo
 import com.triare.drinks.ui.dvo.DrinkDvo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -34,4 +36,5 @@ abstract class BaseDrinkViewModel : ViewModel() {
             }
         }
     }
+
 }

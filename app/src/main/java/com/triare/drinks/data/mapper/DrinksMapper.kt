@@ -8,7 +8,8 @@ class DrinksMapper(private val drinkDto: DrinkDto) {
         return drinkDto.drinks.map {
             DrinkDvo(
                 it.strDrinkThumb,
-                it.strDrink
+                it.strDrink,
+                it.idDrink
             )
         }
     }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.ToolBar.Primary" parent="Widget.MaterialComponents.Toolbar">
+        <item name="navigationIcon">@drawable/ic_arrow_left</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:background">@color/light_green</item>
+        <item name="elevation">0dp</item>
+        <item name="titleCentered">true</item>
+    </style>
+</resources>

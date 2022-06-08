@@ -2,13 +2,17 @@ package com.triare.drinks.ui.drinks
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.triare.drinks.databinding.ItemDrinkBinding
 import com.triare.drinks.ui.dvo.DrinkDvo
 
-class DrinkAdapter(val context: Context) : RecyclerView.Adapter<DrinkAdapter.DrinkViewHolder>() {
+class DrinkAdapter(
+    val context: Context,
+    private val listener: OnItemClickListener
+) : RecyclerView.Adapter<DrinkAdapter.DrinkViewHolder>() {
 
     var items = emptyList<DrinkDvo>()
         set(value) {
@@ -32,11 +36,17 @@ class DrinkAdapter(val context: Context) : RecyclerView.Adapter<DrinkAdapter.Dri
 
     override fun getItemCount() = items.size
 
-    inner class DrinkViewHolder(private val binding: ItemDrinkBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    inner class DrinkViewHolder(
+        private val binding: ItemDrinkBinding
+    ) :
+        RecyclerView.ViewHolder(binding.root), View.OnClickListener {
+
+        init {
+            itemView.setOnClickListener(this)
+        }
+
         fun bind(item: DrinkDvo) {
             binding.apply {
-
                 this.drinkName.text = item.drinkName
 
                 Glide.with(context)
@@ -45,5 +55,16 @@ class DrinkAdapter(val context: Context) : RecyclerView.Adapter<DrinkAdapter.Dri
                     .into(this.drinkImg)
             }
         }
+
+        override fun onClick(v: View?) {
+            val position = adapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                listener.onItemClick(data = items[position])
+            }
+        }
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(data: DrinkDvo)
     }
 }
